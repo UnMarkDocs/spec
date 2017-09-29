@@ -41,7 +41,6 @@ This formal specification is based on the [CommonMark Spec](http://spec.commonma
   - **[Abbreviations (extension)](#abbreviations-extension)**
   - [Backslash escapes](#backslash-escapes)
   - [Code spans](#code-spans)
-  - **[Embeds (extension)](#embeds-extension)**
   - **[Emojis (extension)](#emojis-extension)**
   - [Emphasis and strong emphasis](#emphasis-and-strong-emphasis)
   - **[Strikethrough (extension)](#strikethough-extension)**
@@ -49,6 +48,7 @@ This formal specification is based on the [CommonMark Spec](http://spec.commonma
   - **[Link Generation (extension)](#link-generation-extension)**
   - [Images](#images)
   - **[Icons (extension)](#icons-extension)**
+  - **[OEmbed (extension)](#oembed-extension)**
   - [Autolinks](#autolinks)
   - [Raw HTML](#raw-html)
   - [Hard line breaks](#hard-line-breaks)
@@ -6124,42 +6124,6 @@ closing backtick strings to be equal in length:
 <p>`foo<code>bar</code></p>
 ````````````````````````````````
 
-## Embeds (extension)
-
-UFM adds the embed extension, which allows you to embed YouTube videos, Vimeo videos, GitHub Gists and Codepen Pens.
-
-The syntax is the same you'd use for an [image](#images), but you have to specify the name of the service followed by a [colon] (`:`) and the embed ID in the URL.
-
-Here are some examples:
-
-Youtube Video:
-```````````````````````````````` example
-![YouTube Video Example](youtube:dQw4w9WgXcQ)
-
-<iframe src="https://youtube.com/embed/dQw4w9WgXcQ"></iframe>
-````````````````````````````````
-
-Vimeo Video:
-```````````````````````````````` example
-![Vimeo Video Example](vimeo:51896917)
-
-<iframe src="https://player.vimeo.com/video/51896917"></iframe>
-````````````````````````````````
-
-GitHub Gist:
-```````````````````````````````` example
-![GitHub Gist Example](gist:m1guelpf/0a6d0853cff77e77356e6b9b9e52a41d)
-
-<script src="https://gist.github.com/m1guelpf/0a6d0853cff77e77356e6b9b9e52a41d"></script>
-````````````````````````````````
-
-Codepen Pen:
-```````````````````````````````` example
-![Codepen Pen Example](codepen:NaGKox)
-
-<iframe src="https://codepen.io/m1guelpf/embed/preview/NaGKox/"></iframe>
-````````````````````````````````
-
 ## Emojis (extension)
 
 UFM adds an extension that allows you to add emojis to your documents. The syntax is very simple: You have to write the emoji name between [colons] (`:`). You can find a list of all the compatible emojis [here](https://www.webpagefx.com/tools/emoji-cheat-sheet/).
@@ -8774,6 +8738,102 @@ Here is a simple example:
 [icon="spinner"]
 
 <p><i class="fa fa-spinner"></i></p>
+````````````````````````````````
+
+## OEmbed (extension)
+
+UFM adds the oembed extension, which allows you to embed content from some websites into your documentation.
+
+Using this extension, you can embed content from the following sites:
+
+- 23hq
+- 500px
+- Animoto
+- Aol
+- App.net
+- Bambuser
+- Bandcamp
+- Blip.tv
+- Cacoo
+- CanalPlus
+- Chirb.it
+- CircuitLab
+- Clikthrough
+- Codepen
+- CollegeHumor
+- Coub
+- CrowdRanking
+- DailyMile
+- Dailymotion
+- Deviantart
+- Dipity
+- DocumentCloud
+- Dotsub
+- Edocr
+- Flickr
+- FunnyOrDie
+- Gist
+- Gmep
+- HowCast
+- Huffduffer
+- Hulu
+- Ifixit
+- Ifttt
+- Imgur
+- Instagram
+- Jest
+- Justin
+- Kickstarter
+- Meetup
+- Mixcloud
+- Mobypicture
+- Nfb
+- Official.fm
+- ProductHunt
+- Polldaddy
+- PollEverywhere
+- Prezi
+- Qik
+- Rdio
+- Revision3
+- Roomshare
+- Sapo
+- Screenr
+- Scribd
+- Shoudio
+- Sketchfab
+- SildeShare
+- SoundCloud
+- SpeakerDeck
+- Spotify
+- TED
+- Twitter
+- Ustream
+- Vhx
+- Viddl
+- Videojug
+- Vimeo
+- Vine
+- Wistia
+- WordPress
+- Yfrog
+- YouTube
+- Facebook Video
+
+The syntax is the same you'd use for an [image](#images), but instead of providing the URL to an image, you provide the URL to the embeddable content.
+
+Here are some examples:
+
+```````````````````````````````` example
+![YouTube Video Example](https://youtube.com/watch?v=dQw4w9WgXcQ)
+
+<iframe src="https://youtube.com/embed/dQw4w9WgXcQ"></iframe>
+````````````````````````````````
+
+```````````````````````````````` example
+![GitHub Gist Example](https://gist.github.com/m1guelpf/0a6d0853cff77e77356e6b9b9e52a41d)
+
+<script src="https://gist.github.com/m1guelpf/0a6d0853cff77e77356e6b9b9e52a41d.js"></script>
 ````````````````````````````````
 
 ## Autolinks
