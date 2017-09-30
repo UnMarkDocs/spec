@@ -8723,7 +8723,7 @@ If you want a link after a literal `!`, backslash-escape the
 <p>!<a href="/url" title="title">foo</a></p>
 ````````````````````````````````
 
-## Icons
+## Icons (extension)
 
 UFM adds an extension that allows you to add [Font Awesome Icons](https://fontawesome.io/icons) to your document. The syntax is as follows:
 
