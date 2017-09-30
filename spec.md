@@ -43,7 +43,7 @@ This formal specification is based on the [CommonMark Spec](http://spec.commonma
   - [Code spans](#code-spans)
   - **[Emojis (extension)](#emojis-extension)**
   - [Emphasis and strong emphasis](#emphasis-and-strong-emphasis)
-  - **[Strikethrough (extension)](#strikethough-extension)**
+  - **[Strikethrough (extension)](#strikethrough-extension)**
   - [Links](#links)
   - **[Link Generation (extension)](#link-generation-extension)**
   - [Images](#images)
