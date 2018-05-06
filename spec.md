@@ -47,7 +47,6 @@ This formal specification is based on the [CommonMark Spec](http://spec.commonma
   - [Links](#links)
   - **[Link Generation (extension)](#link-generation-extension)**
   - [Images](#images)
-  - **[Icons (extension)](#icons-extension)**
   - **[OEmbed (extension)](#oembed-extension)**
   - [Autolinks](#autolinks)
   - [Raw HTML](#raw-html)
@@ -8721,23 +8720,6 @@ If you want a link after a literal `!`, backslash-escape the
 [foo]: /url "title"
 .
 <p>!<a href="/url" title="title">foo</a></p>
-````````````````````````````````
-
-## Icons (extension)
-
-UFM adds an extension that allows you to add [Font Awesome Icons](https://fontawesome.io/icons) to your document. The syntax is as follows:
-
-- An [opening square bracket] (`[`)
-- the word icon (`icon`)
-- The icon name between [quotes] (`""`)
-- A [closing square bracket] (`]`)
-
-Here is a simple example:
-
-```````````````````````````````` example
-[icon="spinner"]
-
-<p><i class="fa fa-spinner"></i></p>
 ````````````````````````````````
 
 ## OEmbed (extension)
