@@ -1,10 +1,7 @@
 ---
-title: UnMarkDocs Spec
-preloader: true
-tags: ['unmarkdocs', 'markdown', 'specification']
+title: UnMarkDocs Flavored Markdown Spec
+description: Specification covering every aspect about UnMarkDocs' Markdown flavour
 ---
-
-# UnMarkDocs Flavored Markdown Spec
 
 This formal specification is based on the [CommonMark Spec](http://spec.commonmark.org/) by [John MacFarlane](http://github.com/jgm) and licensed under ![Creative Commons BY-SA](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)
 
